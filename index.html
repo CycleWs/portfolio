@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Portfolio</title>
+</head>
+<body onload="checkAge();checkHour();">
+
+    <header class="header">
+        <nav class="header__menu">
+            <a class="header__menu__link" href="index.html">Home</a>
+            <a class="header__menu__link" href="about.html" id="about">Sobre</a>
+            <div class="header__menu__div">
+                <button class="header__menu__button" onclick="toTranslate(); presentationTranslate(); checkHourTranslate(); checkAgeTranslate()">Traduzir</button>
+            </div>
+        </nav>
+    </header>
+    <main class="presentation">
+        <section class="presentation__content">
+                <h1 id=hour class="presentation__content__title"></h1>
+                <h1 class="presentation__content__title" id="presentation1">
+                    Me chamo
+                    <strong class="titulo-destaque" id="presentation2">Henrique Lima, tenho</strong>
+                    <strong id="age" class="titulo-destaque"></strong>
+                </h1>
+                <p class="presentation__content__text" id="presentation3">Sou desenvolvedor de softwares e estou cursando ciência da computação. Especializado em várias linguagens,
+                    incluindo 
+                    <strong class="titulo-destaque" id="presentation4">Java, C, Python, JavaScript, HTML e CSS.</strong>
+                </p>
+                <h2 class="presentation__content__subtitle" id="presentation5">REDES SOCIAIS:</h2>
+                <div class="presentation__links">
+                     <a class ="presentation__links__link" href = "https://github.com/cyclews" target="_blank"><i class="fa-brands fa-square-github"></i> GITHUB</a>
+                     <a class ="presentation__links__link" href = "https://twitter.com/cycle_ws/" target="_blank"><i class="fa-brands fa-square-twitter"></i> TWITTER</a>
+                </div>
+                    <button class="presentation__button" onclick="copyText()"><i class="fa-brands fa-discord"></i> DISCORD</button>
+                <h2 class="presentation__content__subtitle" id="presentation6">
+                    PROJETOS EM: 
+                </h2>
+                <div class="presentation__link">
+                    <a class="presentation__links__link" href="https://github.com/CycleWs/pythonprojects" target="_blank"><i class="fa-brands fa-python"></i> PYTHON</a>
+                    <div class="dropdown">
+                        <div class="dropbtn">
+                            <a href="minecraft.html" class="dropbtn__link"><i class="fa-solid fa-cube"></i> MINECRAFT</a>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="minecraft.html" class="dropdown__link">TerrainControls</a>
+                            <a href="#">Plugins</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <a class="presentation__links__link"><i class="fa-brands fa-java"></i> JAVA</a> -->
+            </section>
+            <img src="assets/Eu.jpg" alt="Minha foto" width="40%" class="presentation__image" >
+    </main>
+
+    <footer class="footer">
+        <p id="footerInfo">Portfolio desenvolvido por Henrique</p>
+    </footer>
+
+
+</body>
+<script src="./scripts/script.js"></script>
+<script src="./scripts/translate.js"></script>
+<script src="https://kit.fontawesome.com/2cd738140c.js" crossorigin="anonymous"></script>
+</html>
