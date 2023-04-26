@@ -234,8 +234,18 @@ body{
 
     .header{
     padding: 10%;
+    
+    }
+    
+    .header__menu{
+        justify-content: center;
+        gap: 35px;
     }
 
+    .header__menu__div{
+        display: flex;
+        padding: 0% 15%;
+    }
     .presentation{
         flex-direction: column-reverse;
         padding: 5%;
@@ -252,14 +262,6 @@ body{
         gap:10px;
     }
 
-    .header__menu{
-        justify-content: center;
-    }
-
-    .header__menu__div{
-        display: flex;
-        padding: 0% 15%;
-    }
 
 
     
