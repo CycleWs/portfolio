@@ -8,9 +8,9 @@
 }
 
 :root{
-    --primary-color: #27323a;
-    --secondary-color: #29a19c;
-    --tercery-color: white;
+    --primary-color: #1B2021;
+    --secondary-color: #5F939A;
+    --tercery-color: #EAC8AF;
     --forth-color: #072e20;
 
     --primary--font: 'Montserrat', sans-serif;
@@ -92,6 +92,11 @@ body{
     flex-direction: center ;
 }
 
+iframe{
+    width:560px;
+    height:315px;
+}
+
 .footer{
     padding: 24px;
     color:#1b6b68;
@@ -135,6 +140,12 @@ body{
     .header__menu__div{
         display: flex;
         padding: 0% 15%;
+    }
+
+    iframe{
+        width:320px;
+        height:180px;
+
     }
 
     .footer{

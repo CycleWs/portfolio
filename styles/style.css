@@ -9,9 +9,9 @@
 }
 
 :root{
-    --primary-color: #27323a;
-    --secondary-color: #29a19c;
-    --tercery-color: white;
+    --primary-color: #1B2021;
+    --secondary-color: #5F939A;
+    --tercery-color: #EAC8AF;
     --forth-color: #072e20;
 }
 
@@ -21,6 +21,8 @@ body{
     background-color: var(--primary-color);
     color: var(--tercery-color);
 }
+
+
 
 
 .titulo-destaque{
@@ -181,7 +183,7 @@ body{
   .dropbtn__link{
     text-decoration: none;
     width: 50%;
-    color: white;
+    color: var(--tercery-color);
   }
 
   .dropbtn__link:hover{
@@ -190,14 +192,14 @@ body{
   
 .dropdown-content {
     position: relative;
-    display: block;
+    visibility: hidden;
     top: -50px;
     left: 3px;
-    opacity: 0;
-    width: 98%;
-    transition: 0.3s;
+    width: 97.8%;
+    height: 0;
+    transition: 0.8s;
     border-radius: 5px;
-    background-color: #f9f9f9;
+    background-color: var(--tercery-color);
     box-shadow: 3px 8px 16px 0px rgba(243, 242, 242, 0.2);
     z-index: 1;
     font-family: 'Krona One', sans-serif;
@@ -220,7 +222,9 @@ body{
 }
 
 .dropdown:hover .dropdown-content {
-    opacity: 1;
+    visibility: visible;
+    height: auto;
+    flex-direction: column;
     top: -20px;
 }
 

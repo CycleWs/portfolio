@@ -4,6 +4,7 @@ function toTranslate(){
     document.getElementById('presentation3').firstChild.textContent = "I'm a software developer and currently studying computer science. Specialized in several programming languages, including ";
     document.getElementById('presentation5').innerHTML = "SOCIAL MEDIAS";
     document.getElementById('presentation6').innerHTML = "PROJECTS IN: ";
+    document.getElementById('presentation4').innerHTML = "Java, C, Python, JavaScript, HTML and CSS." 
     document.getElementById('footerInfo').innerHTML = "Website developed by Henrique ";
 
 }
